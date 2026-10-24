@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <main className="content empty-state"><span className="overline">۴۰۴</span><h1>این صفحه پیدا نشد.</h1><p>می‌توانی از مسئله‌ات شروع کنی یا سراغ قسمت‌های پادکست بروی.</p><div className="episode-actions"><Link className="button button-navy" href="/">صفحهٔ اول</Link><Link className="button button-outline" href="/podcast">قسمت‌های پادکست</Link></div></main>;}

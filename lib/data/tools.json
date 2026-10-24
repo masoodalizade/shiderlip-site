@@ -1,0 +1,1377 @@
+{
+  "sourceCount": 240,
+  "source": {
+    "filename": "shiderlip-240-products.xlsx",
+    "sheet": "محصولات",
+    "headerRow": 8,
+    "evaluatedAt": "2026-10-24",
+    "priceUnit": "thousand tomans",
+    "contentState": "planned product specifications; no finished files or voices are asserted"
+  },
+  "selectionMethod": "Four practical first-launch products per challenge family. Includes structured interview, 13-week cash flow and poor-performance review. Source launch ranks retained, not treated as finished inventory.",
+  "editorialFields": [
+    "problem",
+    "whenToUse",
+    "notFor"
+  ],
+  "products": [
+    {
+      "id": "P001",
+      "slug": "p001",
+      "title": "مصاحبه ساختاریافته از صفر تا تصمیم",
+      "category": "people",
+      "sourceCategory": "جذب و استخدام",
+      "problem": "می‌خواهم آدم مناسب استخدام کنم.",
+      "description": "فرم Word مصاحبه ۴۵ دقیقه‌ای، سؤال ثابت، پیگیری و امتیازدهی رفتاری",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مدیر استخدام‌کننده",
+      "prerequisites": "شرح شغل و معیار موفقیت",
+      "plannedVoice": {
+        "topic": "اجرای مصاحبه بدون تکیه به حس اولیه",
+        "minutes": 15,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        36,
+        37
+      ],
+      "episodeReference": "E36: محاسبه شیب؛ E37: محاسبه شیب ۲",
+      "episodeEvidence": "پیوند موضوعی؛ برای اپیزودهای ۳۵ تا ۳۷ بر پایه توضیح رسمی، نه متن کامل",
+      "mainResource": {
+        "id": "R01",
+        "title": "راهنمای مصاحبه ساختاریافته",
+        "author": "OPM",
+        "type": "راهنما",
+        "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/guide.pdf"
+      },
+      "additionalResources": [
+        {
+          "id": "R04",
+          "title": "ابزارها و راهنماهای کارآفرینان",
+          "author": "BDC",
+          "type": "مجموعه راهنما",
+          "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit"
+        },
+        {
+          "id": "R24",
+          "title": "Sizing People Up",
+          "author": "Robin Dreeke و Cameron Stauth، ۲۰۲۰",
+          "type": "کتاب",
+          "url": "https://www.penguinrandomhouse.com/books/600291/sizing-people-up-by-robin-dreeke-and-cameron-stauth/"
+        }
+      ],
+      "fileTypes": [
+        "Word"
+      ],
+      "whenToUse": "وقتی برای یک موقعیت شغلی مشخص آمادهٔ مصاحبه و مقایسهٔ داوطلب‌ها هستی.",
+      "notFor": "اگر شرح شغل و معیار موفقیت روشن نیست، ابتدا آن‌ها را مشخص کن.",
+      "contents": [
+        "فرم Word مصاحبه ۴۵ دقیقه‌ای، سؤال ثابت، پیگیری و امتیازدهی رفتاری",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «اجرای مصاحبه بدون تکیه به حس اولیه»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 85,
+      "sourceLaunchRank": 1,
+      "sourceRow": 9,
+      "preview": {
+        "columns": [
+          "معیار شغلی",
+          "پرسش ثابت",
+          "شاهد مورد انتظار"
+        ],
+        "rows": [
+          [
+            "حل مسئله",
+            "از یک خطای تکراری بگو که علتش را پیدا کردی.",
+            "شرح موقعیت، اقدام شخصی و نتیجهٔ قابل بررسی"
+          ],
+          [
+            "پیگیری تعهد",
+            "از کاری بگو که موعد تحویلش در خطر بود.",
+            "اقدام پیش از موعد و اطلاع‌رسانی به ذی‌نفع"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P006",
+      "slug": "p006",
+      "title": "مصاحبه ساختاریافته فروشنده",
+      "category": "people",
+      "sourceCategory": "جذب و استخدام",
+      "problem": "چطور توانایی واقعی یک فروشنده را بسنجیم؟",
+      "description": "بسته Word سؤال رفتاری، موقعیت فروش و جدول امتیاز با نمونه پاسخ",
+      "priceToman": 890000,
+      "priceThousandToman": 890,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "فروشگاه و تیم فروش",
+      "prerequisites": "مدل فروش و مشتری هدف",
+      "plannedVoice": {
+        "topic": "تشخیص فروشنده از خوش‌صحبت",
+        "minutes": 15,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        36,
+        37,
+        3
+      ],
+      "episodeReference": "E36: محاسبه شیب؛ E37: محاسبه شیب ۲؛ E03: جوهر کاسبی (متخصص بوق حمام)",
+      "episodeEvidence": "پیوند موضوعی؛ برای اپیزودهای ۳۵ تا ۳۷ بر پایه توضیح رسمی، نه متن کامل",
+      "mainResource": {
+        "id": "R01",
+        "title": "راهنمای مصاحبه ساختاریافته",
+        "author": "OPM",
+        "type": "راهنما",
+        "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/guide.pdf"
+      },
+      "additionalResources": [
+        {
+          "id": "R04",
+          "title": "ابزارها و راهنماهای کارآفرینان",
+          "author": "BDC",
+          "type": "مجموعه راهنما",
+          "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit"
+        },
+        {
+          "id": "R24",
+          "title": "Sizing People Up",
+          "author": "Robin Dreeke و Cameron Stauth، ۲۰۲۰",
+          "type": "کتاب",
+          "url": "https://www.penguinrandomhouse.com/books/600291/sizing-people-up-by-robin-dreeke-and-cameron-stauth/"
+        }
+      ],
+      "fileTypes": [
+        "Word"
+      ],
+      "whenToUse": "وقتی برای فروشگاه یا تیم فروش، داوطلب استخدام ارزیابی می‌کنی.",
+      "notFor": "اگر مشتری هدف و مدل فروش مشخص نیست، ابتدا این دو را روشن کن.",
+      "contents": [
+        "بسته Word سؤال رفتاری، موقعیت فروش و جدول امتیاز با نمونه پاسخ",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «تشخیص فروشنده از خوش‌صحبت»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 85,
+      "sourceLaunchRank": 2,
+      "sourceRow": 14,
+      "preview": {
+        "columns": [
+          "موقعیت فروش",
+          "پرسش پیگیری",
+          "شاهد رفتاری"
+        ],
+        "rows": [
+          [
+            "مشتری مردد دربارهٔ قیمت",
+            "برای روشن‌کردن دلیل تردید چه پرسیدی؟",
+            "کشف نیاز پیش از پیشنهاد تخفیف"
+          ],
+          [
+            "فرصت فروش بدون پاسخ",
+            "اقدام بعدی را چطور تعیین کردی؟",
+            "زمان و هدف مشخص برای تماس بعدی"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P031",
+      "slug": "p031",
+      "title": "برنامه ورود نیروی تازه در ۳۰ روز",
+      "category": "people",
+      "sourceCategory": "رهبری و توسعه کارکنان",
+      "problem": "نیروی تازه‌ام از کجا شروع کند؟",
+      "description": "چک‌لیست Word روز اول تا هفته چهارم، همراه، آموزش و تحویل خروجی",
+      "priceToman": 690000,
+      "priceThousandToman": 690,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "تیم در حال جذب",
+      "prerequisites": "شرح نقش و مسئول آموزش",
+      "plannedVoice": {
+        "topic": "از استقبال تا اولین نتیجه واقعی",
+        "minutes": 12,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        24,
+        25,
+        37
+      ],
+      "episodeReference": "E24: مثلث رشد ۲؛ E25: آزمایش پر هزینه؛ E37: محاسبه شیب ۲",
+      "episodeEvidence": "پیوند موضوعی؛ برای اپیزودهای ۳۵ تا ۳۷ بر پایه توضیح رسمی، نه متن کامل",
+      "mainResource": {
+        "id": "R04",
+        "title": "ابزارها و راهنماهای کارآفرینان",
+        "author": "BDC",
+        "type": "مجموعه راهنما",
+        "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit"
+      },
+      "additionalResources": [
+        {
+          "id": "R02",
+          "title": "بازخورد با الگوی SBI و پرسش از قصد",
+          "author": "Center for Creative Leadership",
+          "type": "مقاله",
+          "url": "https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/"
+        },
+        {
+          "id": "R16",
+          "title": "شناخت اثربخشی تیم",
+          "author": "Google re:Work",
+          "type": "مقاله",
+          "url": "https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness"
+        }
+      ],
+      "fileTypes": [
+        "Word"
+      ],
+      "whenToUse": "وقتی همکار تازه‌ای وارد تیم شده و باید در ماه اول به خروجی مشخص برسد.",
+      "notFor": "اگر مسئول آموزش و انتظار هر نقش مشخص نیست، ابتدا این دو را تعیین کن.",
+      "contents": [
+        "چک‌لیست Word روز اول تا هفته چهارم، همراه، آموزش و تحویل خروجی",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «از استقبال تا اولین نتیجه واقعی»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 90,
+      "sourceLaunchRank": 3,
+      "sourceRow": 39,
+      "preview": {
+        "columns": [
+          "زمان",
+          "خروجی مورد انتظار",
+          "همراه",
+          "نشانهٔ تحویل"
+        ],
+        "rows": [
+          [
+            "روز اول",
+            "شناخت نقش و ابزارهای ضروری",
+            "سرپرست مستقیم",
+            "همکار بتواند مسیر انجام اولین کار را توضیح دهد"
+          ],
+          [
+            "پایان هفتهٔ اول",
+            "اجرای یک کار واقعی با همراهی",
+            "همکار باتجربه",
+            "خروجی با معیار تحویل مرور شود"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P049",
+      "slug": "p049",
+      "title": "جلسه بررسی عملکرد ضعیف",
+      "category": "people",
+      "sourceCategory": "گفت‌وگوهای سخت و تعارض",
+      "problem": "باید دربارهٔ عملکرد ضعیف گفت‌وگو کنم.",
+      "description": "سناریوی گفت‌وگو، برگه شواهد، ثبت انتظار و موعد پیگیری",
+      "priceToman": 690000,
+      "priceThousandToman": 690,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مدیر دارای نیروی کم‌عملکرد",
+      "prerequisites": "انتظار شغلی و شواهد معتبر",
+      "plannedVoice": {
+        "topic": "صریح باشیم بدون تحقیر یا طفره رفتن",
+        "minutes": 12,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        33,
+        27
+      ],
+      "episodeReference": "E33: لحظه حقیقت؛ E27: ماموریت ممکن",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R03",
+        "title": "گفت‌وگوهای دشوار در محیط کار",
+        "author": "Acas",
+        "type": "راهنما",
+        "url": "https://www.acas.org.uk/acas-guide-to-challenging-conversations-and-how-to-manage-them"
+      },
+      "additionalResources": [
+        {
+          "id": "R02",
+          "title": "بازخورد با الگوی SBI و پرسش از قصد",
+          "author": "Center for Creative Leadership",
+          "type": "مقاله",
+          "url": "https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/"
+        },
+        {
+          "id": "R14",
+          "title": "راهنماهای عملی کار تیمی",
+          "author": "Atlassian",
+          "type": "مجموعه راهنما",
+          "url": "https://www.atlassian.com/team-playbook?content_language=English"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی عملکرد یک همکار از انتظار روشن شغلی فاصله گرفته و جلسهٔ پیگیری لازم است.",
+      "notFor": "اگر هنوز شواهد مشخص و انتظار توافق‌شده نداری، ابتدا آن‌ها را جمع کن.",
+      "contents": [
+        "سناریوی گفت‌وگو، برگه شواهد، ثبت انتظار و موعد پیگیری",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «صریح باشیم بدون تحقیر یا طفره رفتن»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 90,
+      "sourceLaunchRank": 4,
+      "sourceRow": 57,
+      "preview": {
+        "columns": [
+          "مشاهدهٔ مشخص",
+          "انتظار روشن",
+          "اقدام توافقی",
+          "موعد پیگیری"
+        ],
+        "rows": [
+          [
+            "دو گزارش هفتگی دیر تحویل شده",
+            "گزارش تا سه‌شنبه ساعت ۱۲ آماده باشد",
+            "آماده‌کردن پیش‌نویس یک روز زودتر",
+            "هفتهٔ آینده"
+          ],
+          [
+            "در سه سفارش، نشانی ناقص ثبت شده",
+            "نشانی پیش از نهایی‌شدن سفارش کنترل شود",
+            "استفاده از چک‌لیست ثبت سفارش",
+            "پس از ۱۰ سفارش بعدی"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P067",
+      "slug": "p067",
+      "title": "پیش‌بینی نقدینگی ۱۳ هفته آینده",
+      "category": "money",
+      "sourceCategory": "مالی و نقدینگی",
+      "problem": "نمی‌دانم هفته‌های بعد پول کم می‌آورم یا نه.",
+      "description": "فایل Excel دریافت و پرداخت هفتگی، مانده، سناریو و هشدار کسری",
+      "priceToman": 990000,
+      "priceThousandToman": 990,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مالک و مسئول مالی",
+      "prerequisites": "مانده بانک و سررسید دریافت و پرداخت",
+      "plannedVoice": {
+        "topic": "سود داریم اما پول نقد نداریم یعنی چه",
+        "minutes": 18,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        3,
+        19,
+        27
+      ],
+      "episodeReference": "E03: جوهر کاسبی (متخصص بوق حمام)؛ E19: سیب طلایی؛ E27: ماموریت ممکن",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R05",
+        "title": "راهنمای صورت جریان وجه نقد",
+        "author": "BDC",
+        "type": "راهنمای ابزار",
+        "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/cash-flow-statement-template"
+      },
+      "additionalResources": [
+        {
+          "id": "R23",
+          "title": "جوهر کاسبی: What the CEO Wants You to Know",
+          "author": "Ram Charan، ویرایش گسترش‌یافته ۲۰۱۷",
+          "type": "کتاب",
+          "url": "https://www.penguinrandomhouse.com/books/239542/what-the-ceo-wants-you-to-know-expanded-and-updated-by-ram-charan/"
+        },
+        {
+          "id": "R04",
+          "title": "ابزارها و راهنماهای کارآفرینان",
+          "author": "BDC",
+          "type": "مجموعه راهنما",
+          "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit"
+        }
+      ],
+      "fileTypes": [
+        "Excel"
+      ],
+      "whenToUse": "وقتی باید دریافت‌ها و پرداخت‌های ۱۳ هفتهٔ آینده را کنار هم ببینی.",
+      "notFor": "اگر ماندهٔ بانک یا سررسیدهای دریافت و پرداخت مشخص نیست، ابتدا داده‌ها را تکمیل کن.",
+      "contents": [
+        "فایل Excel دریافت و پرداخت هفتگی، مانده، سناریو و هشدار کسری",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «سود داریم اما پول نقد نداریم یعنی چه»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 80,
+      "sourceLaunchRank": 7,
+      "sourceRow": 75,
+      "preview": {
+        "columns": [
+          "هفته",
+          "دریافت پیش‌بینی‌شده، تومان",
+          "پرداخت پیش‌بینی‌شده، تومان"
+        ],
+        "rows": [
+          [
+            "هفتهٔ اول",
+            "۴۰٬۰۰۰٬۰۰۰",
+            "۶۵٬۰۰۰٬۰۰۰"
+          ],
+          [
+            "هفتهٔ دوم",
+            "۶۰٬۰۰۰٬۰۰۰",
+            "۵۵٬۰۰۰٬۰۰۰"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P069",
+      "slug": "p069",
+      "title": "پیگیری وصول مطالبات",
+      "category": "money",
+      "sourceCategory": "مالی و نقدینگی",
+      "problem": "فروش کرده‌ایم؛ پولش هنوز نرسیده.",
+      "description": "فایل Excel عمر بدهی، وعده پرداخت، مسئول و اقدام بعدی",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "فروش اعتباری B2B",
+      "prerequisites": "فهرست بدهکار و مانده تأییدشده",
+      "plannedVoice": {
+        "topic": "فروش را با وصول اشتباه نگیریم",
+        "minutes": 15,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        3,
+        27
+      ],
+      "episodeReference": "E03: جوهر کاسبی (متخصص بوق حمام)؛ E27: ماموریت ممکن",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R23",
+        "title": "جوهر کاسبی: What the CEO Wants You to Know",
+        "author": "Ram Charan، ویرایش گسترش‌یافته ۲۰۱۷",
+        "type": "کتاب",
+        "url": "https://www.penguinrandomhouse.com/books/239542/what-the-ceo-wants-you-to-know-expanded-and-updated-by-ram-charan/"
+      },
+      "additionalResources": [
+        {
+          "id": "R04",
+          "title": "ابزارها و راهنماهای کارآفرینان",
+          "author": "BDC",
+          "type": "مجموعه راهنما",
+          "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit"
+        },
+        {
+          "id": "R05",
+          "title": "راهنمای صورت جریان وجه نقد",
+          "author": "BDC",
+          "type": "راهنمای ابزار",
+          "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/cash-flow-statement-template"
+        }
+      ],
+      "fileTypes": [
+        "Excel"
+      ],
+      "whenToUse": "وقتی مطالبات چند مشتری و وعده‌های پرداخت را باید منظم پیگیری کنی.",
+      "notFor": "اگر ماندهٔ بدهی هر مشتری تأیید نشده، ابتدا حساب‌ها را تطبیق بده.",
+      "contents": [
+        "فایل Excel عمر بدهی، وعده پرداخت، مسئول و اقدام بعدی",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «فروش را با وصول اشتباه نگیریم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 85,
+      "sourceLaunchRank": 8,
+      "sourceRow": 77,
+      "preview": {
+        "columns": [
+          "مشتری فرضی",
+          "ماندهٔ طلب، تومان",
+          "وعدهٔ پرداخت",
+          "اقدام بعدی"
+        ],
+        "rows": [
+          [
+            "مشتری الف",
+            "۲۵٬۰۰۰٬۰۰۰",
+            "دوشنبهٔ هفتهٔ آینده",
+            "تأیید مبلغ و زمان واریز پیش از سررسید"
+          ],
+          [
+            "مشتری ب",
+            "۱۸٬۰۰۰٬۰۰۰",
+            "چهارشنبهٔ هفتهٔ آینده",
+            "ارسال ریز فاکتور و رفع اختلاف حساب"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P073",
+      "slug": "p073",
+      "title": "قیمت‌گذاری با کف سود قابل دفاع",
+      "category": "money",
+      "sourceCategory": "مالی و نقدینگی",
+      "problem": "چقدر بفروشم که سود قابل دفاع بماند؟",
+      "description": "ماشین‌حساب هزینه متغیر، سهم هزینه ثابت و حاشیه هدف",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "فروشگاه و خدمات",
+      "prerequisites": "هزینه معتبر و واحد فروش",
+      "plannedVoice": {
+        "topic": "فرق مارک‌آپ و حاشیه سود را در عمل بفهمیم",
+        "minutes": 15,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        3
+      ],
+      "episodeReference": "E03: جوهر کاسبی (متخصص بوق حمام)",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R06",
+        "title": "محاسبه نقطه سربه‌سر",
+        "author": "U.S. Small Business Administration",
+        "type": "راهنما",
+        "url": "https://legacy.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs/break-even-point"
+      },
+      "additionalResources": [
+        {
+          "id": "R23",
+          "title": "جوهر کاسبی: What the CEO Wants You to Know",
+          "author": "Ram Charan، ویرایش گسترش‌یافته ۲۰۱۷",
+          "type": "کتاب",
+          "url": "https://www.penguinrandomhouse.com/books/239542/what-the-ceo-wants-you-to-know-expanded-and-updated-by-ram-charan/"
+        },
+        {
+          "id": "R04",
+          "title": "ابزارها و راهنماهای کارآفرینان",
+          "author": "BDC",
+          "type": "مجموعه راهنما",
+          "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی برای محصول یا خدمت، کف قیمت و حاشیهٔ سود هدف می‌خواهی.",
+      "notFor": "اگر هزینه‌ها یا واحد فروش معلوم نیست، ابتدا آن‌ها را مشخص کن.",
+      "contents": [
+        "ماشین‌حساب هزینه متغیر، سهم هزینه ثابت و حاشیه هدف",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «فرق مارک‌آپ و حاشیه سود را در عمل بفهمیم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 85,
+      "sourceLaunchRank": 9,
+      "sourceRow": 81,
+      "preview": {
+        "columns": [
+          "نمونهٔ فرضی",
+          "هزینهٔ متغیر واحد، تومان",
+          "سهم هزینهٔ ثابت، تومان",
+          "قیمت پیشنهادی آزمایشی، تومان"
+        ],
+        "rows": [
+          [
+            "محصول الف",
+            "۲۰۰٬۰۰۰",
+            "۵۰٬۰۰۰",
+            "۳۵۰٬۰۰۰"
+          ],
+          [
+            "خدمت ب",
+            "۴۰۰٬۰۰۰",
+            "۱۰۰٬۰۰۰",
+            "۷۰۰٬۰۰۰"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P097",
+      "slug": "p097",
+      "title": "قیف فروش قابل پیگیری",
+      "category": "money",
+      "sourceCategory": "فروش و شناخت مشتری",
+      "problem": "فرصت‌های فروشمان بی‌پیگیری می‌مانند.",
+      "description": "فایل Excel فرصت‌ها، مرحله، ارزش، اقدام بعدی و مسئول",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "تیم فروش ۱ تا ۱۰ نفره",
+      "prerequisites": "تعریف مراحل و فرصت‌های فعلی",
+      "plannedVoice": {
+        "topic": "فرق لید، فرصت و قرارداد قطعی",
+        "minutes": 15,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        3,
+        18,
+        27
+      ],
+      "episodeReference": "E03: جوهر کاسبی (متخصص بوق حمام)؛ E18: دستور پخت ۲؛ E27: ماموریت ممکن",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R19",
+        "title": "راهنمای مدیریت قیف فروش",
+        "author": "Salesforce",
+        "type": "مقاله",
+        "url": "https://www.salesforce.com/sales/pipeline/management/?bc=OTH"
+      },
+      "additionalResources": [
+        {
+          "id": "R08",
+          "title": "بوم پیشنهاد ارزش",
+          "author": "Strategyzer",
+          "type": "راهنمای ابزار",
+          "url": "https://www.strategyzer.com/library/the-value-proposition-canvas"
+        },
+        {
+          "id": "R23",
+          "title": "جوهر کاسبی: What the CEO Wants You to Know",
+          "author": "Ram Charan، ویرایش گسترش‌یافته ۲۰۱۷",
+          "type": "کتاب",
+          "url": "https://www.penguinrandomhouse.com/books/239542/what-the-ceo-wants-you-to-know-expanded-and-updated-by-ram-charan/"
+        }
+      ],
+      "fileTypes": [
+        "Excel"
+      ],
+      "whenToUse": "وقتی یک تیم فروش کوچک به مرحله، مسئول و اقدام بعدی مشترک نیاز دارد.",
+      "notFor": "اگر مراحل فروش و فرصت‌های فعلی ثبت نشده، ابتدا فهرست اولیه را آماده کن.",
+      "contents": [
+        "فایل Excel فرصت‌ها، مرحله، ارزش، اقدام بعدی و مسئول",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «فرق لید، فرصت و قرارداد قطعی»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 85,
+      "sourceLaunchRank": 11,
+      "sourceRow": 105,
+      "preview": {
+        "columns": [
+          "فرصت فرضی",
+          "مرحلهٔ فروش",
+          "اقدام بعدی",
+          "مسئول"
+        ],
+        "rows": [
+          [
+            "فروش به مشتری الف",
+            "نیاز روشن شده",
+            "ارسال پیشنهاد با دامنه و موعد مشخص",
+            "فروشندهٔ ۱"
+          ],
+          [
+            "تمدید مشتری ب",
+            "بررسی پیشنهاد",
+            "جلسه برای روشن‌کردن مانع تصمیم",
+            "فروشندهٔ ۲"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P115",
+      "slug": "p115",
+      "title": "استراتژی یک‌صفحه‌ای شرکت کوچک",
+      "category": "decisions",
+      "sourceCategory": "استراتژی و رشد کسب‌وکار",
+      "problem": "جهت کسب‌وکار را به چند انتخاب روشن برسانم.",
+      "description": "کاربرگ مسئله اصلی، انتخاب بازار، مزیت، اقدام و معیار نتیجه",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مالک و مدیرعامل",
+      "prerequisites": "شناخت پایه مشتری و اقتصاد کار",
+      "plannedVoice": {
+        "topic": "استراتژی را به چند انتخاب واقعی برسانیم",
+        "minutes": 15,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        13,
+        14
+      ],
+      "episodeReference": "E13: صندلی مدیرعامل ۱؛ E14: صندلی مدیرعامل ۲",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R07",
+        "title": "بوم مدل کسب‌وکار",
+        "author": "Strategyzer",
+        "type": "راهنمای ابزار",
+        "url": "https://www.strategyzer.com/library/the-business-model-canvas"
+      },
+      "additionalResources": [
+        {
+          "id": "R26",
+          "title": "تحلیل SWOT برای برنامه‌ریزی",
+          "author": "BDC",
+          "type": "مقاله",
+          "url": "https://www.bdc.ca/en/articles-tools/business-strategy-planning/define-strategy/swot-analysis-easy-tool-strategic-planning"
+        },
+        {
+          "id": "R27",
+          "title": "چهار مسیر رشد و ماتریس آنسوف",
+          "author": "BDC",
+          "type": "مقاله",
+          "url": "https://www.bdc.ca/en/articles-tools/business-strategy-planning/manage-growth/8-strategies-to-grow-your-business"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی مالک و مدیرعامل می‌خواهند انتخاب بازار، مزیت و اقدام‌های اصلی را روشن کنند.",
+      "notFor": "اگر شناخت پایه‌ای از مشتری و اقتصاد کار نداری، ابتدا داده‌های لازم را جمع کن.",
+      "contents": [
+        "کاربرگ مسئله اصلی، انتخاب بازار، مزیت، اقدام و معیار نتیجه",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «استراتژی را به چند انتخاب واقعی برسانیم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 77,
+      "sourceLaunchRank": 13,
+      "sourceRow": 123,
+      "preview": {
+        "columns": [
+          "انتخاب",
+          "دلیل انتخاب",
+          "اقدام ۳۰ روزه",
+          "نشانهٔ نتیجه"
+        ],
+        "rows": [
+          [
+            "تمرکز روی مشتریان خدماتی شهر فعلی",
+            "امکان دسترسی و شناخت بهتر نیاز",
+            "مصاحبه با ۱۰ مشتری از همین گروه",
+            "ثبت سه مسئلهٔ پرتکرار با شاهد"
+          ],
+          [
+            "کوتاه‌کردن زمان تحویل خدمت",
+            "تکرار شکایت دربارهٔ تأخیر",
+            "مرور فرایند و حذف یک گلوگاه",
+            "مقایسهٔ زمان تحویل قبل و بعد"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P134",
+      "slug": "p134",
+      "title": "مقایسه گزینه‌ها با وزن معیارها",
+      "category": "decisions",
+      "sourceCategory": "تصمیم‌گیری و حل مسئله",
+      "problem": "بین چند گزینهٔ مهم مانده‌ام.",
+      "description": "فایل Excel معیار، وزن، امتیاز، شواهد و حساسیت نتیجه",
+      "priceToman": 590000,
+      "priceThousandToman": 590,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مدیر در انتخاب چند گزینه",
+      "prerequisites": "گزینه و معیار قابل مقایسه",
+      "plannedVoice": {
+        "topic": "جدول عددی نباید حس اولیه را بزک کند",
+        "minutes": 12,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        6,
+        15
+      ],
+      "episodeReference": "E06: جعبه سیاه – کیفیت تصمیم؛ E15: گره گوردیوس",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R11",
+        "title": "راهنمای ابزارهای کیفیت و بهبود",
+        "author": "ASQ",
+        "type": "مجموعه راهنما",
+        "url": "https://asq.org/quality-resources/quality-tools"
+      },
+      "additionalResources": [
+        {
+          "id": "R13",
+          "title": "پنج گام برای تصمیم بهتر و RAPID",
+          "author": "Bain & Company",
+          "type": "مقاله",
+          "url": "https://media.bain.com/Images/BAIN_BRIEF_Decision_Insights_The_five_steps_to_better_decisions.pdf"
+        },
+        {
+          "id": "R21",
+          "title": "حل مسئله با A3",
+          "author": "Lean Enterprise Institute",
+          "type": "مقاله",
+          "url": "https://www.lean.org/lexicon-terms/a3-report/"
+        }
+      ],
+      "fileTypes": [
+        "Excel"
+      ],
+      "whenToUse": "وقتی گزینه‌های مشخص داری و می‌خواهی آن‌ها را با معیار و شواهد مشترک مقایسه کنی.",
+      "notFor": "اگر گزینه‌ها یا معیارها هنوز روشن نیستند، ابتدا صورت تصمیم را مشخص کن.",
+      "contents": [
+        "فایل Excel معیار، وزن، امتیاز، شواهد و حساسیت نتیجه",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «جدول عددی نباید حس اولیه را بزک کند»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 82,
+      "sourceLaunchRank": null,
+      "sourceRow": 142,
+      "preview": {
+        "columns": [
+          "گزینهٔ فرضی",
+          "معیار",
+          "وزن معیار، درصد",
+          "امتیاز از ۵"
+        ],
+        "rows": [
+          [
+            "گزینهٔ الف",
+            "هزینهٔ کل مالکیت",
+            "۴۰",
+            "۴"
+          ],
+          [
+            "گزینهٔ ب",
+            "هزینهٔ کل مالکیت",
+            "۴۰",
+            "۲"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P140",
+      "slug": "p140",
+      "title": "تصمیم زیر ابهام با سه سناریو",
+      "category": "decisions",
+      "sourceCategory": "تصمیم‌گیری و حل مسئله",
+      "problem": "در این بازار نامطمئن چطور تصمیم بگیرم؟",
+      "description": "کاربرگ حالت پایه، بدتر و بهتر با اقدام و علامت تغییر",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مدیر در بازار ناپایدار",
+      "prerequisites": "عدم قطعیت مشخص و محدودیت منابع",
+      "plannedVoice": {
+        "topic": "چند آینده ممکن را آماده داشته باشیم",
+        "minutes": 15,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        2,
+        12,
+        6
+      ],
+      "episodeReference": "E02: شطرنج جادویی؛ E12: ایستگاه فضایی؛ E06: جعبه سیاه – کیفیت تصمیم",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R20",
+        "title": "آزمایش ایده‌های کسب‌وکار",
+        "author": "Strategyzer",
+        "type": "کتاب و مجموعه راهنما",
+        "url": "https://www.strategyzer.com/library"
+      },
+      "additionalResources": [
+        {
+          "id": "R13",
+          "title": "پنج گام برای تصمیم بهتر و RAPID",
+          "author": "Bain & Company",
+          "type": "مقاله",
+          "url": "https://media.bain.com/Images/BAIN_BRIEF_Decision_Insights_The_five_steps_to_better_decisions.pdf"
+        },
+        {
+          "id": "R21",
+          "title": "حل مسئله با A3",
+          "author": "Lean Enterprise Institute",
+          "type": "مقاله",
+          "url": "https://www.lean.org/lexicon-terms/a3-report/"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی یک تصمیم به چند آیندهٔ ممکن وابسته است و باید برای تغییر شرایط آماده باشی.",
+      "notFor": "اگر عدم قطعیت اصلی و محدودیت منابع مشخص نیست، ابتدا آن‌ها را تعریف کن.",
+      "contents": [
+        "کاربرگ حالت پایه، بدتر و بهتر با اقدام و علامت تغییر",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «چند آینده ممکن را آماده داشته باشیم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 77,
+      "sourceLaunchRank": null,
+      "sourceRow": 148,
+      "preview": {
+        "columns": [
+          "سناریو",
+          "نشانهٔ تغییر",
+          "اقدام آماده",
+          "نقطهٔ بازبینی"
+        ],
+        "rows": [
+          [
+            "حالت پایه",
+            "فروش در محدودهٔ برآورد هفتگی است",
+            "حفظ برنامهٔ جاری و پایش دریافت‌ها",
+            "پایان هر هفته"
+          ],
+          [
+            "حالت بدتر",
+            "دریافت‌ها دو هفته پیاپی از برآورد کمتر است",
+            "بازنگری پرداخت‌های قابل تعویق",
+            "پس از دومین هفته"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P142",
+      "slug": "p142",
+      "title": "تعریف مسئله پیش از راه‌حل",
+      "category": "decisions",
+      "sourceCategory": "تصمیم‌گیری و حل مسئله",
+      "problem": "راه‌حل زیاد داریم؛ خود مسئله روشن نیست.",
+      "description": "کاربرگ وضع موجود، فاصله، ذی‌نفع و نشانه موفقیت",
+      "priceToman": 490000,
+      "priceThousandToman": 490,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مدیر و تیم حل مسئله",
+      "prerequisites": "یک مشکل قابل مشاهده",
+      "plannedVoice": {
+        "topic": "مسئله را از نسخه آماده جدا کنیم",
+        "minutes": 9,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        9
+      ],
+      "episodeReference": "E09: تخم مرغ کلمب",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R21",
+        "title": "حل مسئله با A3",
+        "author": "Lean Enterprise Institute",
+        "type": "مقاله",
+        "url": "https://www.lean.org/lexicon-terms/a3-report/"
+      },
+      "additionalResources": [
+        {
+          "id": "R13",
+          "title": "پنج گام برای تصمیم بهتر و RAPID",
+          "author": "Bain & Company",
+          "type": "مقاله",
+          "url": "https://media.bain.com/Images/BAIN_BRIEF_Decision_Insights_The_five_steps_to_better_decisions.pdf"
+        },
+        {
+          "id": "R20",
+          "title": "آزمایش ایده‌های کسب‌وکار",
+          "author": "Strategyzer",
+          "type": "کتاب و مجموعه راهنما",
+          "url": "https://www.strategyzer.com/library"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی تیم از یک مشکل حرف می‌زند اما دربارهٔ وضع موجود و نتیجهٔ مطلوب توافق ندارد.",
+      "notFor": "اگر هنوز مشکل قابل مشاهده‌ای تعیین نشده، ابتدا یک موقعیت واقعی را انتخاب کن.",
+      "contents": [
+        "کاربرگ وضع موجود، فاصله، ذی‌نفع و نشانه موفقیت",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «مسئله را از نسخه آماده جدا کنیم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 87,
+      "sourceLaunchRank": null,
+      "sourceRow": 150,
+      "preview": {
+        "columns": [
+          "وضع موجود",
+          "فاصلهٔ مشاهده‌شده",
+          "شاهد لازم",
+          "نشانهٔ موفقیت"
+        ],
+        "rows": [
+          [
+            "تحویل سفارش گاهی عقب می‌افتد",
+            "موعد واقعی با وعدهٔ ثبت‌شده تفاوت دارد",
+            "زمان وعده و تحویل ۲۰ سفارش اخیر",
+            "کاهش سهم سفارش‌های دیرتحویل"
+          ],
+          [
+            "مشتری چند بار یک سؤال را می‌پرسد",
+            "اطلاعات تحویل برای مشتری روشن نیست",
+            "بررسی پیام‌های ۱۰ مشتری اخیر",
+            "کم‌شدن پرسش تکراری دربارهٔ زمان تحویل"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P151",
+      "slug": "p151",
+      "title": "برنامه اجرایی ۹۰ روزه شرکت",
+      "category": "execution",
+      "sourceCategory": "هدف‌گذاری، برنامه و نتیجه",
+      "problem": "هدف‌هایمان چطور به کار این هفته برسند؟",
+      "description": "کاربرگ سه هدف، خروجی، مسئول، موعد و مرور هفتگی",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مالک و تیم مدیریت",
+      "prerequisites": "چند هدف با منابع مشخص",
+      "plannedVoice": {
+        "topic": "هدف را تا هفته آینده خرد کنیم",
+        "minutes": 12,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        19,
+        18
+      ],
+      "episodeReference": "E19: سیب طلایی؛ E18: دستور پخت ۲؛ D03: تولید نتیجه",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R15",
+        "title": "تعریف و برنامه پروژه با Project Poster",
+        "author": "Atlassian",
+        "type": "راهنمای ابزار",
+        "url": "https://www.atlassian.com/team-playbook/plays/project-poster?tab=instructions"
+      },
+      "additionalResources": [
+        {
+          "id": "R14",
+          "title": "راهنماهای عملی کار تیمی",
+          "author": "Atlassian",
+          "type": "مجموعه راهنما",
+          "url": "https://www.atlassian.com/team-playbook?content_language=English"
+        },
+        {
+          "id": "R04",
+          "title": "ابزارها و راهنماهای کارآفرینان",
+          "author": "BDC",
+          "type": "مجموعه راهنما",
+          "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی چند هدف روشن داری و باید آن‌ها را به خروجی، مسئول و موعد در ۹۰ روز تبدیل کنی.",
+      "notFor": "اگر هدف‌ها و منابع در دسترس مشخص نیست، ابتدا محدودهٔ برنامه را روشن کن.",
+      "contents": [
+        "کاربرگ سه هدف، خروجی، مسئول، موعد و مرور هفتگی",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «هدف را تا هفته آینده خرد کنیم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 90,
+      "sourceLaunchRank": 14,
+      "sourceRow": 159,
+      "preview": {
+        "columns": [
+          "خروجی ۹۰ روزه",
+          "مسئول نقش",
+          "اقدام هفتهٔ اول",
+          "معیار مرور"
+        ],
+        "rows": [
+          [
+            "راه‌اندازی پیگیری فرصت‌های فروش",
+            "سرپرست فروش",
+            "ثبت فرصت‌های جاری و مرحلهٔ هرکدام",
+            "درصد فرصت‌های دارای اقدام بعدی"
+          ],
+          [
+            "کاهش سفارش‌های ناقص",
+            "مسئول عملیات",
+            "ثبت علت خطای ۲۰ سفارش اخیر",
+            "تعداد خطا به ازای سفارش تحویل‌شده"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P169",
+      "slug": "p169",
+      "title": "تفویض اختیار با قرارداد روشن",
+      "category": "execution",
+      "sourceCategory": "سازماندهی، تفویض و زمان",
+      "problem": "همهٔ کارها دوباره به خودم برمی‌گردد.",
+      "description": "کاربرگ نتیجه، اختیار، مرز ریسک و نقطه بازبینی",
+      "priceToman": 690000,
+      "priceThousandToman": 690,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "مدیر گرفتار در جزئیات",
+      "prerequisites": "یک کار واقعاً قابل واگذاری",
+      "plannedVoice": {
+        "topic": "کار را بدهیم و مسئولیت رهبری را نگه داریم",
+        "minutes": 12,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        22,
+        25
+      ],
+      "episodeReference": "E22: هدهد دانا؛ E25: آزمایش پر هزینه",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R14",
+        "title": "راهنماهای عملی کار تیمی",
+        "author": "Atlassian",
+        "type": "مجموعه راهنما",
+        "url": "https://www.atlassian.com/team-playbook?content_language=English"
+      },
+      "additionalResources": [
+        {
+          "id": "R22",
+          "title": "مبانی روش GTD",
+          "author": "David Allen Company",
+          "type": "مقاله",
+          "url": "https://gettingthingsdone.com/what-is-gtd/"
+        },
+        {
+          "id": "R13",
+          "title": "پنج گام برای تصمیم بهتر و RAPID",
+          "author": "Bain & Company",
+          "type": "مقاله",
+          "url": "https://media.bain.com/Images/BAIN_BRIEF_Decision_Insights_The_five_steps_to_better_decisions.pdf"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی می‌خواهی یک مسئولیت قابل واگذاری را با خروجی و حدود اختیار روشن بسپاری.",
+      "notFor": "اگر کار واقعاً قابل واگذاری نیست، ابتدا بخش قابل انتقال آن را جدا کن.",
+      "contents": [
+        "کاربرگ نتیجه، اختیار، مرز ریسک و نقطه بازبینی",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «کار را بدهیم و مسئولیت رهبری را نگه داریم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 90,
+      "sourceLaunchRank": 15,
+      "sourceRow": 177,
+      "preview": {
+        "columns": [
+          "خروجی واگذارشده",
+          "حدود اختیار",
+          "مرز تصمیم",
+          "نقطهٔ بازبینی"
+        ],
+        "rows": [
+          [
+            "برنامهٔ شیفت هفتهٔ آینده",
+            "جابه‌جایی شیفت با توافق همکارها",
+            "تغییر تعداد نفرات نیازمند تأیید مدیر است",
+            "مرور پیش‌نویس پیش از انتشار"
+          ],
+          [
+            "پیگیری سفارش‌های عقب‌افتاده",
+            "تماس و هماهنگی زمان تحویل",
+            "تعهد هزینهٔ اضافی نیازمند تأیید است",
+            "گزارش وضعیت در پایان روز"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P187",
+      "slug": "p187",
+      "title": "نوشتن دستورالعمل اجرایی SOP",
+      "category": "execution",
+      "sourceCategory": "سیستم، فرایند و کیفیت",
+      "problem": "روش انجام کار فقط توی سر آدم‌هاست.",
+      "description": "قالب Word روش اجرا، مسئول، استثنا، کنترل و نسخه همراه مثال",
+      "priceToman": 790000,
+      "priceThousandToman": 790,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "کسب‌وکار وابسته به افراد",
+      "prerequisites": "یک کار پرتکرار واقعی",
+      "plannedVoice": {
+        "topic": "دانش توی سر افراد را قابل اجرا کنیم",
+        "minutes": 12,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        29,
+        18
+      ],
+      "episodeReference": "E29: در جستجوی نمو؛ E18: دستور پخت ۲",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R12",
+        "title": "کار استانداردشده",
+        "author": "Lean Enterprise Institute",
+        "type": "مقاله",
+        "url": "https://www.lean.org/lexicon-terms/standardized-work/"
+      },
+      "additionalResources": [
+        {
+          "id": "R11",
+          "title": "راهنمای ابزارهای کیفیت و بهبود",
+          "author": "ASQ",
+          "type": "مجموعه راهنما",
+          "url": "https://asq.org/quality-resources/quality-tools"
+        },
+        {
+          "id": "R21",
+          "title": "حل مسئله با A3",
+          "author": "Lean Enterprise Institute",
+          "type": "مقاله",
+          "url": "https://www.lean.org/lexicon-terms/a3-report/"
+        }
+      ],
+      "fileTypes": [
+        "Word"
+      ],
+      "whenToUse": "وقتی یک کار پرتکرار باید با روش و مسئولیت مشخص قابل اجرا شود.",
+      "notFor": "اگر فرایند هنوز اجرا و مشاهده نشده، ابتدا یک اجرای واقعی را ثبت کن.",
+      "contents": [
+        "قالب Word روش اجرا، مسئول، استثنا، کنترل و نسخه همراه مثال",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «دانش توی سر افراد را قابل اجرا کنیم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 90,
+      "sourceLaunchRank": 17,
+      "sourceRow": 195,
+      "preview": {
+        "columns": [
+          "مرحلهٔ کار",
+          "مسئول نقش",
+          "کنترل لازم",
+          "استثنا و ارجاع"
+        ],
+        "rows": [
+          [
+            "ثبت سفارش تازه",
+            "مسئول پذیرش",
+            "تأیید نشانی و موعد با مشتری",
+            "درخواست خارج از دامنه به سرپرست ارجاع شود"
+          ],
+          [
+            "آماده‌سازی برای ارسال",
+            "مسئول ارسال",
+            "تطبیق اقلام با سفارش ثبت‌شده",
+            "مغایرت پیش از تحویل به پذیرش برگردد"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P224",
+      "slug": "p224",
+      "title": "جلسه روزانه ۱۰ دقیقه‌ای",
+      "category": "execution",
+      "sourceCategory": "تیم، اطلاعات و رهبری مدیر",
+      "problem": "هماهنگی روزانه‌مان وقت زیادی می‌گیرد.",
+      "description": "دستور جلسه پیشرفت، مانع، امروز و تصمیم فوری با فرم ثبت",
+      "priceToman": 390000,
+      "priceThousandToman": 390,
+      "currency": "IRT",
+      "availability": "preparing",
+      "audience": "فروش، کمپین و عملیات",
+      "prerequisites": "کار جاری مشترک و مسئول تصمیم",
+      "plannedVoice": {
+        "topic": "دیلی را به گزارش‌خوانی طولانی تبدیل نکنیم",
+        "minutes": 9,
+        "availability": "planned"
+      },
+      "episodeNumbers": [
+        25,
+        26,
+        27
+      ],
+      "episodeReference": "E25: آزمایش پر هزینه؛ E26: ذهن خیالباف؛ E27: ماموریت ممکن",
+      "episodeEvidence": "توسعه کاربردی از موضوع متن آرشیو؛ ادعای معرفی همین ابزار در اپیزود نیست",
+      "mainResource": {
+        "id": "R14",
+        "title": "راهنماهای عملی کار تیمی",
+        "author": "Atlassian",
+        "type": "مجموعه راهنما",
+        "url": "https://www.atlassian.com/team-playbook?content_language=English"
+      },
+      "additionalResources": [
+        {
+          "id": "R16",
+          "title": "شناخت اثربخشی تیم",
+          "author": "Google re:Work",
+          "type": "مقاله",
+          "url": "https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness"
+        },
+        {
+          "id": "R03",
+          "title": "گفت‌وگوهای دشوار در محیط کار",
+          "author": "Acas",
+          "type": "راهنما",
+          "url": "https://www.acas.org.uk/acas-guide-to-challenging-conversations-and-how-to-manage-them"
+        }
+      ],
+      "fileTypes": [],
+      "whenToUse": "وقتی تیم روی کار مشترک جاری فعالیت می‌کند و باید پیشرفت و مانع را سریع روشن کند.",
+      "notFor": "اگر کار مشترک جاری و مسئول تصمیم مشخص نیست، ابتدا ریتم هماهنگی مناسب را تعیین کن.",
+      "contents": [
+        "دستور جلسه پیشرفت، مانع، امروز و تصمیم فوری با فرم ثبت",
+        "نمونهٔ تکمیل‌شده",
+        "راهنمای اجرا",
+        "ویس اختصاصی مسعود با موضوع «دیلی را به گزارش‌خوانی طولانی تبدیل نکنیم»",
+        "مطالعهٔ اصلی و دو منبع تکمیلی"
+      ],
+      "sourcePriority": 87,
+      "sourceLaunchRank": 19,
+      "sourceRow": 232,
+      "preview": {
+        "columns": [
+          "پیشرفت",
+          "مانع",
+          "کار امروز",
+          "تصمیم لازم"
+        ],
+        "rows": [
+          [
+            "تماس‌های برنامه‌ریزی‌شده انجام شد",
+            "دو مشتری دربارهٔ شرایط پرداخت سؤال دارند",
+            "روشن‌کردن نیاز و ثبت اقدام بعدی",
+            "تعیین مسئول تأیید شرایط پرداخت"
+          ],
+          [
+            "سفارش‌ها بسته‌بندی شده‌اند",
+            "یکی از نشانی‌ها ناقص است",
+            "تأیید نشانی و زمان ارسال",
+            "تعیین آخرین زمان انتظار برای تأیید"
+          ]
+        ]
+      }
+    }
+  ],
+  "previewOrigin": "original illustrative starter, not final paid file",
+  "previewDisplayLabel": "نمونهٔ اولیه",
+  "previewNote": "تمام ردیف‌های نمونه تألیفی و فرضی‌اند؛ این پیش‌نمایش، فایل نهایی محصول فروشی نیست."
+}
