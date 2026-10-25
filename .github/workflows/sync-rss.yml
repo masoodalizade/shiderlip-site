@@ -9,6 +9,7 @@ on:
       - scripts/sync-rss.mjs
       - scripts/run-rss.mjs
       - lib/rss.ts
+      - lib/route-shell.ts
       - .github/workflows/sync-rss.yml
 permissions:
   contents: write
