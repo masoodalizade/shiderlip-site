@@ -1,0 +1,41 @@
+name: Refresh Shiderlip podcast RSS
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync-rss.mjs
+      - lib/rss.ts
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: shiderlip-rss
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Read official RSS and preserve editorial overrides
+        run: node --experimental-strip-types scripts/sync-rss.mjs
+      - name: Publish refreshed public data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/podcast.json podcast/ sitemap.xml
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh official Shiderlip podcast feed'
+          git push origin HEAD:main
+      - name: Request publication of the refreshed branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

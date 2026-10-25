@@ -1,5 +1,5 @@
-import podcastSnapshot from './data/podcast.json';
-import catalog from './data/tools.json';
+import podcastSnapshot from '../content/podcast.json';
+import catalog from '../content/tools.json';
 
 export type Category = 'people' | 'money' | 'decisions' | 'execution';
 export type Episode = {
@@ -17,6 +17,7 @@ export type Tool = {
   mainResource: {id?: string; title: string; url: string; author?: string; type?: string};
   additionalResources: {title: string; url: string}[];
   fileTypes: string[]; whenToUse: string; notFor: string; contents: string[];
+  hidden?: boolean; downloadUrl?: string; voiceUrl?: string; cover?: string;
   preview?: {columns: string[]; rows: string[][]};
 };
 export const initialEpisodes = podcastSnapshot.episodes as Episode[];

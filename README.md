@@ -1,32 +1,41 @@
-# شیدرلیپ
+# شیدرلیپ — Shiderlip
 
-Persian, RTL podcast and management-tool library for SME managers. Uses the supplied navy/green brand and self-hosted Vazirmatn font.
+Persian RTL podcast and management-tool library for SME managers, published at https://shiderlip.ir.
 
-## Current behavior
+## Public website
 
-- Four challenge families connect concrete problems to tools and related published episodes.
-- 37 verified podcast episodes from the official Acast RSS are bundled as a resilient snapshot. `GET /api/podcast` refreshes server-side with a 30-minute memory cache and falls back to the snapshot on upstream failures.
-- Real MP3 enclosures play in a persistent layout player across internal navigation. Controls include seeking, speed, volume, and resume positions.
-- Search, category/season filters, sorting, pagination, detail pages, bookmarks, and original CSV starter previews work.
-- Bookmarks and listening progress are stored in the current browser only. No account synchronization or purchase entitlements are claimed.
-- Sixteen planned products were selected from the owner's 240-product workbook. All are explicitly preparing, with proposed prices. There is no active payment or purchase-completion flow.
+The existing navy/green design, self-hosted Vazirmatn font, 37 official podcast episodes, and 16 initial tools are retained. The layout player persists across navigation, remembers listening progress locally, and supports seeking, playback speed, volume, and next episode. Search, topic filters, saved tools/episodes, detail pages, and original CSV sample downloads are functional.
 
-## Content
+The public website is a static React application with prerendered HTML for each initial route. GitHub Pages publishes the repository root, where `index.html`, route folders, compiled `assets/site/`, and `.nojekyll` are committed. No change to the current domain or branch publishing source is required. The GitHub repository remains the source of truth.
 
-- `lib/data/podcast.json`: verified RSS snapshot; preserve episode IDs and durable enclosure URLs.
-- `lib/data/tools.json`: curated product data, planned contents/voice, legal resource links, and clearly illustrative sample tables.
-- `public/media/`: supplied logo and official podcast cover.
-- `lib/site-data.ts`: shared types and topic associations. Related episode order follows editorial source priority.
+## Content management
 
-Before activating sales, add the final paid files and recorded guides, implement a payment-provider verification flow and protected delivery, and replace preparing status with verified product availability. Do not mark a local bookmark as a purchase.
+Open https://shiderlip.ir/admin/.
 
-## Development and validation
+The admin edits page titles, introductions, About text, images, links, tools, prices, sample tables, sources, and podcast descriptions. Products can be hidden or added. Finished free tools can expose public downloads; unfinished products remain visibly in preparation. All content updates are committed atomically to `main` and trigger the existing Pages publication.
 
-This repository contains the complete source of the published Shiderlip website, including the podcast feed snapshot, management-tool catalog, brand assets, and font.
+Authentication uses a repository-scoped GitHub fine-grained personal access token. Select only `masoodalizade/shiderlip-site`, grant **Contents: Read and write**, and optionally **Actions: Read and write** for manual RSS refresh. The admin page contains the setup guide and token creation link. The token exists only in memory, is sent only to `api.github.com`, and is cleared when leaving the editor or logging out. It is never written to localStorage, sessionStorage, the repository, or a URL.
 
-### Run locally
+Concurrent edits are checked before publication; non-fast-forward updates are rejected rather than overwriting other changes. Content validation rejects unsafe URL schemes, duplicate route IDs, and free products without a download. Public uploads must not contain paid files or personal/private data. Browser bookmarks and progress are local convenience data, not purchase entitlements.
 
-Use Node.js 22.13.0 or newer and the pnpm version pinned in `package.json`.
+### Content files
+
+- `content/settings.json`: page copy, branding, contact links, and SEO description.
+- `content/tools.json`: product catalog, status, public files, sample tables, and resources.
+- `content/podcast.json`: verified snapshot of the official Acast RSS.
+- `content/editorial.json`: per-episode editorial overrides and visibility. RSS refreshes preserve these overrides.
+
+The admin provides a JSON backup download. Source-controlled history is available in GitHub for recovery.
+
+## Podcast RSS
+
+Official feed: https://feeds.acast.com/public/shows/shiderlip
+
+The feed does not allow browser CORS, so it is fetched by `.github/workflows/sync-rss.yml` every six hours and on manual dispatch. The workflow validates the source, keeps durable enclosure URLs, adds public HTML shells for new episodes, updates the snapshot, and explicitly requests a Pages build after the bot commit. A large unexpected episode-count decrease stops the refresh and preserves existing content.
+
+## Development
+
+Node.js 22.13.0+ and pnpm 11.25.0 (as pinned in `package.json`).
 
 ```bash
 corepack enable
@@ -34,22 +43,22 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open `http://localhost:5173`. To check types and build for production:
+The browser entry is `static-src/site-app.tsx`; shared experiences and the player are in `components/`. `vite.pages.config.ts` provides lightweight navigation adapters so the established components can run on static hosting while preserving the player.
 
 ```bash
 pnpm exec tsc --noEmit
-pnpm build
-pnpm start
+pnpm test:cms
+pnpm build:pages
 ```
 
-The production build targets Cloudflare Workers through Vinext. `pnpm start` runs the built Worker locally; it does not publish it. The repository is source code, and pushing it to GitHub does not by itself deploy a working website on GitHub Pages. The podcast refresh API and server-rendered routes need a compatible runtime.
+`pnpm build:pages` generates `pages-dist/`. `pnpm publish:pages` also refreshes committed public files at the repository root. Commit source and generated files together when changing application code. Ordinary admin changes update public content JSON directly and do not need a JavaScript rebuild.
 
-For updates to the existing Sites-hosted website, use the Sites setup/build/publish helpers. Preserve `.openai/hosting.json` and its existing `project_id`.
+The original Vinext/Workers starter files are retained for future server functionality; `dev:sites` and `build:sites` access that build path. `.openai/hosting.json` retains the original Sites identity. It is separate from the current GitHub Pages deployment.
 
-### Published website
+## Before paid sales
 
-https://shiderlip.oakenhill35.chatgpt.site
+The catalog currently describes planned products and clearly labeled starter samples. Paid sales require the actual finished files and recorded guides, a payment-provider integration, server-side payment verification, and private delivery. Public repository uploads must never be treated as protected paid delivery.
 
-The existing hosted site's access settings are managed separately from this repository. Payments remain inactive until the paid files, voice guides, and verified payment flow are ready.
+## Verification
 
-Meaningful checks completed for the first version: TypeScript, production build, RSS parser parity against all 37 source episodes, catalog source reconciliation, browser navigation/search/bookmarks/sample download, actual audio playback and navigation continuity, and narrow mobile layouts.
+CMS tests cover authenticated authorization failures, Persian Unicode, atomic Git commits, concurrent edits, safe URLs, product uniqueness, new routes, preservation of RSS versus editorial content, and RSS parsing. Production builds prerender all initial routes and preserve real MP3 enclosure URLs. No credentials are included in source or public assets.
