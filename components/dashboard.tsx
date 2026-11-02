@@ -56,7 +56,7 @@ export function DashboardShell({children}:{children:ReactNode}){
  return <div className="dash-frame" dir="rtl">
   <aside className={'dash-sidebar '+(menuOpen?'dash-sidebar-open':'')} aria-label="منوی اصلی">
     <div className="dash-sidebar-head">
-      <Link href="/" className="dash-brand" aria-label="شیدرلیپ، صفحه اصلی"><span className="dash-brand-symbol"><img src="/media/logo.png" alt=""/></span><span>شیدر<span className="dash-brand-green">لیپ</span></span></Link>
+      <Link href="/" className="dash-brand" aria-label="شیدرلیپ، صفحه اصلی"><img className="dash-wordmark" src="/media/brand-wordmark.png" alt="شیدرلیپ"/></Link>
       <button type="button" aria-label="بستن منو" className="dash-close-mobile" onClick={()=>setMenuOpen(false)}><X size={20}/></button>
     </div>
     <nav className="dash-nav">{NAV.map(n=>{const Icon=n.icon;return <Link key={n.href} href={n.href} className={'dash-nav-item '+(active(n)?'dash-nav-active':'')} aria-current={active(n)?'page':undefined}><Icon size={21} strokeWidth={1.8}/><span>{n.name}</span></Link>})}</nav>

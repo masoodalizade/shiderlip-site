@@ -135,3 +135,8 @@
  .dash-question-arrow{width:13px}
  .dash-footer{padding:15px;font-size:10px;gap:12px;flex-wrap:wrap}
 }
+
+/* Official uploaded wordmark */
+.dash-sidebar{background:#224062}
+.dash-wordmark{display:block;width:184px;max-width:100%;height:auto;object-fit:contain}
+@media(max-width:790px){.dash-wordmark{width:173px}}
