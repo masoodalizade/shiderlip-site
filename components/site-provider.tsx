@@ -4,6 +4,7 @@ import Link from 'next/link';
 import {usePathname} from 'next/navigation';
 import {ArrowLeft,Bookmark,Check,ChevronLeft,Headphones,Pause,Play,RotateCcw,RotateCw,Volume2,X,Menu} from 'lucide-react';
 import {type Episode,type Tool,initialEpisodes,cleanTitle,fa,tools as initialTools} from '@/lib/site-data';
+import {DashboardShell} from './dashboard';
 
 import defaultSettings from '@/content/settings.json';
 import defaultEditorial from '@/content/editorial.json';
@@ -18,6 +19,7 @@ function write(key:string,value:unknown){try{localStorage.setItem(key,JSON.strin
 function clock(n:number){if(!Number.isFinite(n))return '00:00';return [Math.floor(n/60),Math.floor(n%60)].map(x=>String(x).padStart(2,'0')).join(':');}
 
 export function SiteProvider({children}:{children:ReactNode}){
+ const path=usePathname();
  const [episodes,setEpisodes]=useState<Episode[]>(()=>initialEpisodes.map(ep=>({...ep,...(defaultEditorial.episodes as Record<string,{hidden?:boolean}>)[ep.id]})).filter(ep=>!ep.hidden));
  const [tools,setTools]=useState<Tool[]>(initialTools.filter(t=>!t.hidden));
  const [settings,setSettings]=useState<SiteSettings>(()=>settingsSchema.parse(defaultSettings));
@@ -61,7 +63,7 @@ export function SiteProvider({children}:{children:ReactNode}){
  const next=()=>{if(!current)return;const older=episodes.find(ep=>ep.episodeNumber===current.episodeNumber+1);if(older)play(older);};
  const hasNext=current&&episodes.some(ep=>ep.episodeNumber===current.episodeNumber+1);
  return <SiteContext.Provider value={{episodes,tools,settings,contentReady,applyContent,savedTools,savedEpisodes,current,playing,progress,play,toggleTool,toggleEpisode,toast,ready}}>
-  <div className={current?'site with-player':'site'}><Header/>{children}<Footer/></div>
+  <div className={(current?'site with-player':'site')+(path==='/admin'?'':' dashboard-root')}>{path==='/admin'?<><Header/>{children}<Footer/></>:<DashboardShell>{children}</DashboardShell>}</div>
   <audio ref={audio} preload="metadata" onPlay={()=>{setPlaying(true);setAudioError('');}} onPause={()=>{setPlaying(false);saveProgress();}} onLoadedMetadata={()=>{if(audio.current){setDuration(audio.current.duration||current?.durationSeconds||0);if(resume.current){audio.current.currentTime=resume.current;resume.current=0;}}}} onTimeUpdate={()=>{if(audio.current){setTime(audio.current.currentTime);if(Date.now()-lastSaved.current>10000){saveProgress();lastSaved.current=Date.now();}}}} onEnded={()=>{setPlaying(false);saveProgress();}} onError={()=>{setAudioError('دریافت صدا ممکن نشد. اتصال را بررسی کن یا در میزبان اصلی بشنو.');setPlaying(false);}}/>
   {current&&<section className="audio-dock" aria-label="پخش‌کننده پادکست">
    <div className="dock-inner">

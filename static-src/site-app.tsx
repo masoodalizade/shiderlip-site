@@ -5,19 +5,27 @@ import {SiteProvider,useSite} from '../components/site-provider';
 import {HomeExperience,Catalog,ToolDetail,EpisodeDetail,MyTools,About} from '../components/experience';
 import {Admin} from './admin';
 import {cleanTitle} from '../lib/site-data';
+import {DashboardHome,DashboardProblem,DashboardSection,MANAGER_PROBLEMS} from '../components/dashboard';
 
 function Pages(){
  const path=usePathname();const {tools,episodes,settings,contentReady}=useSite();
+ const problem=path.startsWith('/problems/')?MANAGER_PROBLEMS.find(p=>p.slug===path.split('/')[2]):undefined;
  const tool=path.startsWith('/tools/')?tools.find(t=>t.id.toLowerCase()===path.split('/')[2]?.toLowerCase()):undefined;
  const episode=path.startsWith('/podcast/')?episodes.find(ep=>ep.id===path.split('/')[2]):undefined;
  useEffect(()=>{
-  const title=tool?.title||(episode?cleanTitle(episode.title):({'/':settings.siteName,'/tools':settings.toolsTitle,'/podcast':settings.podcastTitle,'/my-tools':'ابزارهای من','/about':settings.aboutTitle,'/admin':'مدیریت شیدرلیپ','/privacy':'حریم خصوصی'}[path]||'صفحه پیدا نشد'));
+  const title=problem?.title||tool?.title||(episode?cleanTitle(episode.title):({'/':settings.siteName,'/problems':'مشکلات متداول','/education':'آموزش‌ها','/resources':'منابع','/services':'خدمات','/apps':'اپلیکیشن‌ها','/tests':'تست‌ها','/tools':settings.toolsTitle,'/podcast':settings.podcastTitle,'/my-tools':'ابزارهای من','/about':settings.aboutTitle,'/admin':'مدیریت شیدرلیپ','/privacy':'حریم خصوصی'}[path]||'صفحه پیدا نشد'));
   document.title=title+' | جعبه‌ابزار روزمرهٔ مدیر';
   document.querySelector('meta[name="description"]')?.setAttribute('content',tool?.description||episode?.subtitle||settings.seoDescription);
   let robots=document.querySelector('meta[name="robots"]');
   if(path==='/admin'){if(!robots){robots=document.createElement('meta');robots.setAttribute('name','robots');document.head.appendChild(robots);}robots.setAttribute('content','noindex,nofollow');}else robots?.remove();
  },[path,tool,episode,settings]);
- if(path==='/')return <HomeExperience/>;
+ if(path==='/'||path==='/problems')return <DashboardHome full={path==='/problems'}/>;
+ if(problem)return <DashboardProblem slug={problem.slug}/>;
+ if(path==='/education')return <DashboardSection kind="education"/>;
+ if(path==='/resources')return <DashboardSection kind="resources"/>;
+ if(path==='/services')return <DashboardSection kind="services"/>;
+ if(path==='/apps')return <DashboardSection kind="apps"/>;
+ if(path==='/tests')return <DashboardSection kind="tests"/>;
  if(path==='/tools')return <Catalog key="tools" kind="tools"/>;
  if(path==='/podcast')return <Catalog key="podcast" kind="podcast"/>;
  if(path==='/my-tools')return <MyTools/>;

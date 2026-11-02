@@ -18,6 +18,23 @@ const editorial=JSON.parse(await readFile('content/editorial.json','utf8'));
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const routes=[
  {url:'/',title:settings.siteName,description:settings.seoDescription},
+ {url:'/problems/',title:'مشکلات متداول',description:'پاسخ به مسائل واقعی مدیران کسب‌وکارهای کوچک و متوسط'},
+ {url:'/education/',title:'آموزش‌ها'},
+ {url:'/resources/',title:'منابع'},
+ {url:'/services/',title:'خدمات'},
+ {url:'/apps/',title:'اپلیکیشن‌ها'},
+ {url:'/tests/',title:'تست‌ها'},
+ ...[
+  ['cash-sales','چطور فروش نقدی کسب‌وکارم را بیشتر کنم؟'],['cash-shortage','چرا با اینکه فروش داریم، همیشه مشکل نقدینگی داریم؟'],
+  ['founder-dependency','چطور کاری کنم شرکت بدون حضور من هم درست کار کند؟'],['employee-performance','چطور عملکرد کارکنانم را اندازه بگیرم؟'],
+  ['collect-receivables','چطور مطالباتم را سریع‌تر وصول کنم؟'],['customer-retention','چطور مشتری‌ها را وفادار نگه دارم؟'],
+  ['commission','چطور یک سیستم پورسانت عادلانه طراحی کنم؟'],['hiring','چطور نیروهای خوب پیدا کنم و نگه دارم؟'],
+  ['meetings','چطور جلسات تیم را به تصمیم و اقدام واقعی تبدیل کنم؟'],['profitability','چطور بفهمم کدام بخش کسب‌وکارم واقعاً سودآور است؟'],
+  ['choose-projects','روی کدام محصول یا پروژه سرمایه‌گذاری کنم؟'],['sales-report','گزارش هفتگی فروش'],
+  ['job-descriptions','شرح وظایف کارکنان'],['stable-revenue','درآمد قابل‌پیش‌بینی'],['delegate','تفویض اختیار'],
+  ['launch','عرضه محصول جدید'],['working-capital','ذخیره نقدی'],['grow-without-chaos','رشد و سیستم‌سازی'],
+  ['recruitment-shortage','کمبود نیروی کار'],['where-to-start','از کجا شروع کنم؟']
+ ].map(([slug,title])=>({url:'/problems/'+slug+'/',title,description:'راهکارها و ابزارهای مرتبط با این مسئله مدیریتی در شیدرلیپ'})),
  {url:'/tools/',title:settings.toolsTitle,description:settings.toolsDescription},
  {url:'/podcast/',title:settings.podcastTitle,description:settings.podcastDescription},
  {url:'/my-tools/',title:'ابزارهای من'},
