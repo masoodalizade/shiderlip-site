@@ -1,5 +1,79 @@
 /* Shiderlip dashboard — shared shell and question-first homepage. */
 :root{--dash-navy:#234264;--dash-dark:#142e4b;--dash-green:#8dc83c;--dash-ink:#213850;--dash-muted:#718091;--dash-border:#e7ebef}
+
+.listen-home {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  padding: clamp(24px, 6vw, 56px) 20px;
+  background: radial-gradient(ellipse at 50% 0%, #edf5e5, #fbfcfa 65%);
+}
+
+.listen-panel {
+  width: min(100%, 400px);
+  text-align: center;
+}
+
+.listen-mark {
+  width: 76px;
+  margin: 0 auto 14px;
+  padding: 14px;
+  border: 1px solid #e0e8da;
+  border-radius: 22px;
+  background: #fff;
+}
+
+.listen-mark img {
+  width: 100%;
+  height: auto;
+}
+
+.listen-panel h1 {
+  color: var(--dash-navy);
+  font-size: clamp(28px, 6vw, 38px);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.listen-intro {
+  margin-top: 4px;
+  color: #526477;
+  font-size: 15px;
+}
+
+.listen-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.listen-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  padding: 10px 16px;
+  border: 1px solid #dce6d7;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--dash-navy);
+  font-size: 16px;
+  font-weight: 650;
+  text-align: start;
+}
+
+.listen-link:hover {
+  border-color: #83a960;
+  background: #f1f7eb;
+}
+
+.listen-platform {
+  color: #526477;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .site.dashboard-root{display:block;min-height:100vh;padding-bottom:0}
 .site.dashboard-root.with-player{padding-bottom:108px}
 .dash-frame{display:flex;flex-direction:row;min-height:100vh;background:#fcfcfd;direction:rtl}

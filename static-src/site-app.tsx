@@ -7,6 +7,62 @@ import {Admin} from './admin';
 import {cleanTitle} from '../lib/site-data';
 import {DashboardHome,DashboardProblem,DashboardSection,MANAGER_PROBLEMS} from '../components/dashboard';
 
+export const listenPage = {
+ title: 'پادکست شیدرلیپ',
+ description: 'پادکست شیدرلیپ را در کست‌باکس، اپل پادکست یا فیدیبو بشنو.',
+};
+
+const listenLinks = [
+ {
+  label: 'کست‌باکس',
+  platform: 'Castbox',
+  href: 'https://castbox.fm/channel/Shiderlip-%7C-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE-id6163968',
+ },
+ {
+  label: 'اپل پادکست',
+  platform: 'Apple Podcasts',
+  href: 'https://podcasts.apple.com/us/podcast/shiderlip-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE/id1745513880',
+ },
+ {
+  label: 'فیدیبو',
+  platform: 'Fidibo',
+  href: 'https://fidibo.com/channel/30000833-shiderlip-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE',
+ },
+ {
+  label: 'فید اصلی',
+  platform: 'Acast RSS',
+  href: 'https://feeds.acast.com/public/shows/shiderlip',
+ },
+];
+
+function ListenHome() {
+ useEffect(() => {
+  document.title = listenPage.title;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', listenPage.description);
+  document.querySelector('meta[name="robots"]')?.remove();
+ }, []);
+
+ return (
+  <main id="main-content" className="listen-home">
+   <div className="listen-panel">
+    <div className="listen-mark">
+     <img src="/media/logo.png" width="1140" height="1050" alt="" />
+    </div>
+    <h1>{listenPage.title}</h1>
+    <p className="listen-intro">از پلتفرم دلخواهت گوش کن.</p>
+    <nav className="listen-links" aria-label="پلتفرم‌های شنیدن شیدرلیپ">
+     {listenLinks.map(({label, platform, href}) => (
+      <a className="listen-link" href={href} key={href}>
+       <span>{label}</span>
+       <span className="listen-platform" dir="ltr" lang="en">{platform}</span>
+      </a>
+     ))}
+    </nav>
+   </div>
+  </main>
+ );
+}
+
 function Pages(){
  const path=usePathname();const {tools,episodes,settings,contentReady}=useSite();
  const problem=path.startsWith('/problems/')?MANAGER_PROBLEMS.find(p=>p.slug===path.split('/')[2]):undefined;
@@ -19,7 +75,7 @@ function Pages(){
   let robots=document.querySelector('meta[name="robots"]');
   if(path==='/admin'){if(!robots){robots=document.createElement('meta');robots.setAttribute('name','robots');document.head.appendChild(robots);}robots.setAttribute('content','noindex,nofollow');}else robots?.remove();
  },[path,tool,episode,settings]);
- if(path==='/'||path==='/problems')return <DashboardHome full={path==='/problems'}/>;
+ if(path==='/problems')return <DashboardHome full/>;
  if(problem)return <DashboardProblem slug={problem.slug}/>;
  if(path==='/education')return <DashboardSection kind="education"/>;
  if(path==='/resources')return <DashboardSection kind="resources"/>;
@@ -37,4 +93,12 @@ function Pages(){
  if(!contentReady&&(path.startsWith('/tools/')||path.startsWith('/podcast/')))return <main className="content loading-content" role="status">در حال دریافت محتوا…</main>;
  return <main className="content empty-state"><span className="overline">۴۰۴</span><h1>این صفحه پیدا نشد.</h1><p>از یک مسئله شروع کن یا سراغ قسمت‌های پادکست برو.</p><Link className="button button-navy" href="/">صفحهٔ اول</Link></main>;
 }
-export function App({initialPath='/'}:{initialPath?:string}){return <Router initialPath={initialPath}><SiteProvider><div id="main-content"><Pages/></div></SiteProvider></Router>;}
+function SiteRoutes() {
+ const path = usePathname();
+ if (path === '/') return <ListenHome/>;
+ return <SiteProvider><div id="main-content"><Pages/></div></SiteProvider>;
+}
+
+export function App({initialPath='/'}:{initialPath?:string}){
+ return <Router initialPath={initialPath}><SiteRoutes/></Router>;
+}

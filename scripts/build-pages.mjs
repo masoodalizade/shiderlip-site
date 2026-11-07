@@ -6,7 +6,7 @@ import {pathToFileURL} from 'node:url';
 const project=process.cwd();
 await build({configFile:path.join(project,'vite.pages.config.ts')});
 await build({configFile:path.join(project,'vite.pages.config.ts'),publicDir:false,build:{ssr:path.join(project,'static-src/server.tsx'),outDir:'.pages-ssr',emptyOutDir:true,rollupOptions:{input:path.join(project,'static-src/server.tsx'),output:{entryFileNames:'server.mjs'}}}});
-const {render}=await import(pathToFileURL(path.join(project,'.pages-ssr/server.mjs')).href+'?v='+Date.now());
+const {render,listenPage}=await import(pathToFileURL(path.join(project,'.pages-ssr/server.mjs')).href+'?v='+Date.now());
 const output=path.join(project,'pages-dist');
 let template=await readFile(path.join(output,'static-src/index.html'),'utf8');
 template=template.replace('</head>',"<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; media-src 'self' https: blob:; connect-src 'self' https://api.github.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"/></head>");
@@ -17,7 +17,7 @@ const podcast=JSON.parse(await readFile('content/podcast.json','utf8'));
 const editorial=JSON.parse(await readFile('content/editorial.json','utf8'));
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const routes=[
- {url:'/',title:settings.siteName,description:settings.seoDescription},
+ {url:'/',...listenPage},
  {url:'/problems/',title:'مشکلات متداول',description:'پاسخ به مسائل واقعی مدیران کسب‌وکارهای کوچک و متوسط'},
  {url:'/education/',title:'آموزش‌ها'},
  {url:'/resources/',title:'منابع'},
@@ -45,7 +45,7 @@ const routes=[
  ...podcast.episodes.filter(ep=>!editorial.episodes[ep.id]?.hidden).map(ep=>({url:`/podcast/${ep.id}/`,title:editorial.episodes[ep.id]?.title||ep.title,description:editorial.episodes[ep.id]?.subtitle||ep.subtitle})),
 ];
 for(const route of [...routes,{url:'/404',title:'صفحه پیدا نشد',noindex:true}]){
- let html=template.replace('<title>شیدرلیپ | جعبه‌ابزار روزمرهٔ مدیر</title>',`<title>${escape(route.url==='/'?settings.siteName+' | جعبه‌ابزار روزمرهٔ مدیر':route.title+' | شیدرلیپ')}</title>`);
+ let html=template.replace('<title>شیدرلیپ | جعبه‌ابزار روزمرهٔ مدیر</title>',`<title>${escape(route.url==='/'?route.title:route.title+' | شیدرلیپ')}</title>`);
  html=html.replace(/<meta name="description"[^>]*>/,`<meta name="description" content="${escape(route.description||settings.seoDescription)}"/>`);
  html=html.replace('<!--app:start--><!--app:end-->','<!--app:start-->'+render(route.url.replace(/\/$/,'')||'/')+'<!--app:end-->');
  html=html.replace('</head>',`<link rel="canonical" href="https://shiderlip.ir${route.url}"/><meta property="og:title" content="${escape(route.title)}"/><meta property="og:description" content="${escape(route.description||settings.seoDescription)}"/><meta property="og:image" content="${escape(settings.coverUrl.startsWith('https://')?settings.coverUrl:'https://shiderlip.ir'+settings.coverUrl)}"/><meta property="og:locale" content="fa_IR"/>${route.noindex?'<meta name="robots" content="noindex,nofollow"/>':''}</head>`);
