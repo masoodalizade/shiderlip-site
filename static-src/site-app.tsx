@@ -49,6 +49,7 @@ function ListenHome() {
      <img src="/media/logo.png" width="1140" height="1050" alt="" />
     </div>
     <h1>{listenPage.title}</h1>
+    <p className="listen-host">با <a href="https://masoodalizade.ir/">مسعود علیزاده</a></p>
     <p className="listen-intro">از پلتفرم دلخواهت گوش کن.</p>
     <nav className="listen-links" aria-label="پلتفرم‌های شنیدن شیدرلیپ">
      {listenLinks.map(({label, platform, href}) => (

@@ -35,6 +35,18 @@
   line-height: 1.5;
 }
 
+.listen-host {
+  margin: 4px 0 12px;
+  color: #526477;
+  font-size: 15px;
+}
+
+.listen-host a {
+  color: var(--dash-navy);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .listen-intro {
   margin-top: 4px;
   color: #526477;
