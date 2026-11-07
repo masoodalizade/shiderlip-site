@@ -9,30 +9,36 @@ import {DashboardHome,DashboardProblem,DashboardSection,MANAGER_PROBLEMS} from '
 
 export const listenPage = {
  title: 'پادکست شیدرلیپ',
- description: 'پادکست شیدرلیپ را در کست‌باکس، اپل پادکست یا فیدیبو بشنو.',
+ description: 'پادکست شیدرلیپ را در کست‌باکس، تلگرام و پلت‌فرم دلخواهت دنبال کن.',
 };
 
-const listenLinks = [
- {
-  label: 'کست‌باکس',
-  platform: 'Castbox',
-  href: 'https://castbox.fm/channel/Shiderlip-%7C-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE-id6163968',
- },
- {
-  label: 'اپل پادکست',
-  platform: 'Apple Podcasts',
-  href: 'https://podcasts.apple.com/us/podcast/shiderlip-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE/id1745513880',
- },
- {
-  label: 'فیدیبو',
-  platform: 'Fidibo',
-  href: 'https://fidibo.com/channel/30000833-shiderlip-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE',
- },
- {
-  label: 'فید اصلی',
-  platform: 'Acast RSS',
-  href: 'https://feeds.acast.com/public/shows/shiderlip',
- },
+const otherPlatforms = [
+ ['شنیدن در همین سایت', '/podcast/'],
+ ['یوتیوب', 'https://www.youtube.com/@Shiderlip/podcasts'],
+ ['YouTube Music', 'https://music.youtube.com/@Shiderlip'],
+ ['اسپاتیفای', 'https://open.spotify.com/show/1nmRcEVHr4bPxeG09UK5D4'],
+ ['اپل پادکست', 'https://podcasts.apple.com/us/podcast/id1745513880'],
+ ['تهران پادکست', 'https://tehranpodcast.ir/shiderlip/'],
+ ['فیدیبو', 'https://fidibo.com/channel/30000833-shiderlip-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE'],
+ ['Acast', 'https://shows.acast.com/shiderlip'],
+ ['Amazon Music', 'https://music.amazon.in/podcasts/da77e698-2e45-4ae4-8f8b-a363a607fb40/shiderlip-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE'],
+ ['Audible', 'https://www.audible.com/podcast/Shiderlip/B0DG91JHFK?overrideBaseCountry=true&ipRedirectOverride=true'],
+ ['Pocket Casts', 'https://pca.st/itunes/1745513880'],
+ ['Podcast Addict', 'https://podcastaddict.com/podcast/shiderlip/5217011'],
+ ['Podcast Republic', 'https://podcastrepublic.net/podcast/1745513880'],
+ ['Castro', 'https://castro.fm/podcast/bc9a10d5-9764-49f4-a36e-a9d463afe325'],
+ ['Overcast', 'https://overcast.fm/itunes1745513880'],
+ ['AntennaPod', 'https://antennapod.org/deeplink/subscribe/?url=https%3A%2F%2Ffeeds.acast.com%2Fpublic%2Fshows%2Fshiderlip&title=Shiderlip'],
+ ['Podtail', 'https://podtail.com/en/podcast/shiderlip/'],
+ ['GetPodcast', 'https://getpodcast.com/podcast/shiderlip-shydrlyp'],
+ ['radio.net', 'https://www.radio.net/podcast/shiderlip-shydrlyp'],
+ ['Podscan', 'https://podscan.fm/podcasts/shiderlip-sydrlyp'],
+ ['PodParadise', 'https://www.podparadise.com/Podcast/1745513880'],
+ ['TopPodcast', 'https://toppodcast.com/podcast_feeds/shiderlip-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE/'],
+ ['دیزر', 'https://www.deezer.com/show/1001213981'],
+ ['Podimo', 'https://podimo.com/de/shows/shiderlip-shydrlyp'],
+ ['Podbay', 'https://podbay.fm/p/shiderlip-or-shydrlyp'],
+ ['Listen Notes', 'https://www.listennotes.com/podcasts/asUjERQF7Lu/'],
 ];
 
 function ListenHome() {
@@ -52,13 +58,25 @@ function ListenHome() {
     <p className="listen-host">با <a href="https://masoodalizade.ir/">مسعود علیزاده</a></p>
     <p className="listen-intro">از پلتفرم دلخواهت گوش کن.</p>
     <nav className="listen-links" aria-label="پلتفرم‌های شنیدن شیدرلیپ">
-     {listenLinks.map(({label, platform, href}) => (
-      <a className="listen-link" href={href} key={href}>
-       <span>{label}</span>
-       <span className="listen-platform" dir="ltr" lang="en">{platform}</span>
-      </a>
-     ))}
+     <a className="listen-link" href="https://castbox.fm/channel/Shiderlip-%7C-%D8%B4%DB%8C%D8%AF%D8%B1%D9%84%DB%8C%D9%BE-id6163968">کست‌باکس</a>
+     <a className="listen-link" href="https://t.me/masood_alizadee">تلگرام</a>
+     <details className="listen-more">
+      <summary className="listen-link">دیگر پلت‌فرم‌ها</summary>
+      <ul className="listen-platforms">
+       {otherPlatforms.map(([label, href]) => (
+        <li key={href}><a href={href} dir="auto">{label}</a></li>
+       ))}
+      </ul>
+     </details>
     </nav>
+    <footer className="listen-footer">
+     <a className="listen-consult" href="https://forms.gle/QeD4tJvMyKrH1XUj9">درخواست مشاوره کسب‌وکار</a>
+     <div className="listen-secondary">
+      <a href="https://t.me/shiderlip">پیام مستقیم در تلگرام</a>
+      <a href="https://www.instagram.com/shiderlip">اینستاگرام شیدرلیپ</a>
+      <a href="https://feeds.acast.com/public/shows/shiderlip">فید RSS</a>
+     </div>
+    </footer>
    </div>
   </main>
  );
