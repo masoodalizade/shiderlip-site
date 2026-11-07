@@ -11,6 +11,12 @@ const output=path.join(project,'pages-dist');
 let template=await readFile(path.join(output,'static-src/index.html'),'utf8');
 template=template.replace('</head>',"<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; media-src 'self' https: blob:; connect-src 'self' https://api.github.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"/></head>");
 template=template.replace('<div id="app"></div>','<div id="app"><!--app:start--><!--app:end--></div>');
+// The listening homepage uses native links and details. Keep its layout
+// independent of versioned assets that may expire while HTML is cached.
+const stylesheet=template.match(/<link rel="stylesheet"[^>]*href="([^"]+)"[^>]*>/);
+if(!stylesheet)throw new Error('Missing compiled Pages stylesheet');
+const homeCss=await readFile(path.join(output,stylesheet[1].replace(/^\//,'')),'utf8');
+const homeLogo=(await readFile(path.join(output,'media/logo.png'))).toString('base64');
 const settings=JSON.parse(await readFile('content/settings.json','utf8'));
 const catalog=JSON.parse(await readFile('content/tools.json','utf8'));
 const podcast=JSON.parse(await readFile('content/podcast.json','utf8'));
@@ -49,6 +55,13 @@ for(const route of [...routes,{url:'/404',title:'صفحه پیدا نشد',noind
  html=html.replace(/<meta name="description"[^>]*>/,`<meta name="description" content="${escape(route.description||settings.seoDescription)}"/>`);
  html=html.replace('<!--app:start--><!--app:end-->','<!--app:start-->'+render(route.url.replace(/\/$/,'')||'/')+'<!--app:end-->');
  html=html.replace('</head>',`<link rel="canonical" href="https://shiderlip.ir${route.url}"/><meta property="og:title" content="${escape(route.title)}"/><meta property="og:description" content="${escape(route.description||settings.seoDescription)}"/><meta property="og:image" content="${escape(settings.coverUrl.startsWith('https://')?settings.coverUrl:'https://shiderlip.ir'+settings.coverUrl)}"/><meta property="og:locale" content="fa_IR"/>${route.noindex?'<meta name="robots" content="noindex,nofollow"/>':''}</head>`);
+ if(route.url==='/'){
+  html=html.replace(stylesheet[0],()=>`<style>${homeCss}</style>`)
+   .replace(/<script type="module"[^>]*><\/script>/g,'')
+   .replace('<link rel="preload" as="image" href="/media/logo.png"/>','')
+   .replace('src="/media/logo.png"',`src="data:image/png;base64,${homeLogo}"`)
+   .replace(/<noscript>.*?<\/noscript>/,'');
+ }
  const destination=route.url==='/404'?path.join(output,'404.html'):path.join(output,route.url.slice(1),'index.html');
  await mkdir(path.dirname(destination),{recursive:true});await writeFile(destination,html);
 }
